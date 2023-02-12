@@ -1,4 +1,6 @@
-## MATLAB code for evaluating the state of health of lithium-ion batteries for second-life applications, as demonstrated in Takahashi et al., iScience.
+## Second-Life-ML
+
+MATLAB code for evaluating the state of health of lithium-ion batteries for second-life applications, as demonstrated in Takahashi et al., iScience.
 
 ## MATLAB libraries to run code:
 * Parallel Computing Toolbox
