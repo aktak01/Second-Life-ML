@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori, sonori@stanford.edu), 
+% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori), 
 % Stanford University. All Rights Reserved. 
 %
 % FILE CONTENT >> Plotting boxplots for observing model performance
@@ -26,6 +26,8 @@ datasetLabels = ['NMC'; 'LCO'; 'LFP'];
 figure; box on; hold on; grid on;
 pos = [100 100 560 420];
 set(gcf, 'position', pos);
+%NOTE: For MATLAB versions before R2021a, please use the following line
+%boxplot([nmc.listRMSE, lco.listRMSE, lfp.listRMSE ], 'labels', datasetLabels);
 boxplot([nmc.listRMSE, lco.listRMSE, lfp.listRMSE ], Labels = datasetLabels);
 ylabel('RMSPE [\%]', 'interpreter', 'latex');
 xlim([0 4]); ylim([0 5]);
@@ -37,6 +39,8 @@ set(findall(gcf,'-property','ticklabelinterpreter'),'ticklabelinterpreter','late
 figure; box on; hold on; grid on;
 pos2 = [100 100 560  420];
 set(gcf, 'position', pos2);
+%NOTE: For MATLAB versions before R2021a, please use the following line
+% boxplot([nmc.listMPE, lco.listMPE, lfp.listMPE ], 'labels', datasetLabels);
 boxplot([nmc.listMPE, lco.listMPE, lfp.listMPE ], Labels = datasetLabels);
 ylabel('MPE [\%]','interpreter','latex');
 xlim([0 4]); ylim([0 5]);
@@ -50,6 +54,8 @@ set(findall(gcf,'-property','ticklabelinterpreter'),'ticklabelinterpreter','late
 figure; box on; hold on; grid on;
 pos3 = [100 100 560  420];
 set(gcf, 'position', pos3);
+%NOTE: For MATLAB versions before R2021a, please use the following line
+% boxplot([nmc.listCalibration, lco.listCalibration, lfp.listCalibration ], 'labels', datasetLabels);
 boxplot([nmc.listCalibration, lco.listCalibration, lfp.listCalibration ], Labels = datasetLabels);
 xlim([0 4]);
 ylabel('CS [-]','interpreter','latex');

@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori, sonori@stanford.edu), 
+% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori), 
 % Stanford University. All Rights Reserved. 
 %
 % FILE CONTENT >> Plotting SOH vs. features

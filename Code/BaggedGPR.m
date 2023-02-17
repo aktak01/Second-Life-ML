@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori, sonori@stanford.edu), 
+% Copyright @ 2022 Stanford Energy Control Laboratory (PI: simona onori), 
 % Stanford University. All Rights Reserved. 
 %
 % FILE CONTENT >> Bagged GPR Model main file
@@ -45,8 +45,9 @@ end
 totalCells = length(socList);
 
 %turn on for baseline model performance
-numBags = 1;
-sampleSize = -1;
+% numBags = 1;
+% sampleSize = -1;
+
 %% Comprehensive Bagging Analysis. Iterate process multiple times
 
 [listRMSE, listMPE, listCalibration, trainError, testError] = IterativeGPR(numIterations, numBags, sampleSize, numFeatures, totalCells, resList, currList, socList);
